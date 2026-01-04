@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GlobalChange | 多币种 | مُحول</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</head>
+
+<body>
+    <h2>Currency Converter App</h2>
+    <div class="input">
+        <label for="amount">Enter Amount: </label>
+        <input type="number" placeholder="e.g: 100" id="amount">
+        <br><br>
+    </div>
+
+    <div class="selection">
+        <label for="fromCurrency">From: </label>
+        <select id="fromCurrency">
+            <option value="USD">USD- United States Dollar</option>
+            <option value="EUR">EUR- Euro</option>
+            <option value="INR">INR- Indian Rupee</option>
+            <option value="JPY">JPY- Japanese Yen</option>
+            <option value="GBP">GBP- British Pound Sterling</option>
+        </select>
+
+        <label for="toCurrency">To:</label>
+        <select id="toCurrency">
+            <option value="GBP">GBP- British Pound Sterling</option>
+            <option value="INR">INR- Indian Rupee</option>
+            <option value="USD">USD- United States Dollar</option>
+            <option value="EUR">EUR- Euro</option>
+            <option value="JPY">JPY- Japanese Yen</option>
+        </select>
+    </div>
+
+    <br><br>
+    <button onclick="convertCurrency()" class="btn">Convert > </button>
+    <p id="output"></p>
+    <script src="brain.js"></script>
+</body>
+
+</html>
